@@ -8,7 +8,7 @@ Basic C++ Unit Test Framework
 
 ## Adding unit testing to a C++ class in three easy steps
 
-1. Include UnitTest.h and UnitTest.cpp in your project. Add a unit test function to the class definition:
+**Step 1:** Include UnitTest.h and UnitTest.cpp in your project. Add a unit test function to the class definition:
 
 <pre>class ClassToBeTested
 {
@@ -20,7 +20,7 @@ public:
 #endif
 };</pre>
 
-2. Define the test function implementation. The test function is defined as static, so treat it as any other static function.
+**Step 2:** Define the test function implementation. The test function is defined as static, so treat it as any other static function.
 
 <pre>#ifdef ENABLE_UNIT_TEST
 
@@ -40,7 +40,7 @@ DEFINE_TEST_METHOD2(ClassToBeTested)
 
 #endif</pre>
 
-3. Add the RUN_UNIT_TESTS() macro as the first line in main() to run all unit tests. 
+**Step 3:** Add the RUN_UNIT_TESTS() macro as the first line in main() to run all unit tests. 
 
 <pre>int main(int argc,char *argv[])
 {
